@@ -22,7 +22,6 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "esModuleInterop": true, // CommonJSのモジュールの読み込みによる警告アラートを出さないように
     "types": ["@testing-library/jest-dom"] // 型エラーによるアラートを出さないように
   },
   "include": ["src"]
