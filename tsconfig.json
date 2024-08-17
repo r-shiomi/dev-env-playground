@@ -7,8 +7,5 @@
     {
       "path": "./tsconfig.node.json"
     }
-  ],
-  "compilerOptions": {
-    "esModuleInterop": true // CommonJSのモジュールの読み込みによる警告アラートを出さないように
-  }
+  ]
 }
