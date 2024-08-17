@@ -16,5 +16,10 @@ jobs:
       - name: Install packages
         run: npm ci
 
-      - name: Show coverage
+      - name: Run vitest
         run: npm run test:coverage
+
+      - name: Show coverage report
+        uses: davelosert/vitest-coverage-report-action@v2
+        with:
+          json-summary-path: coverage/coverage-summary.json
