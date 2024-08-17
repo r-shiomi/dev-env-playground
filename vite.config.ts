@@ -1,4 +1,4 @@
-import { defineConfig } from 'vite'
+import { defineConfig } from 'vitest/config'
 import react from '@vitejs/plugin-react-swc'
 import { resolve } from 'path'
 
@@ -20,5 +20,9 @@ export default defineConfig({
         entryFileNames: `assets/[name]/bundle.js`,
       },
     },
+  },
+  test: {
+    // ここに Vitest 用の設定を書き込んでいく
+    globals: true,
   },
 })
